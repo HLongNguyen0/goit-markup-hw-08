@@ -1,0 +1,20 @@
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  outline: 1px solid blue;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: unset;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 94px 15px;
+  }
+}

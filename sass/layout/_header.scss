@@ -1,0 +1,201 @@
+.header {
+  #logo {
+    margin-right: 88px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+  }
+  &__nav {
+    margin-right: 84px;
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+    }
+    @include font(500, 14px, 1.14);
+    letter-spacing: 0.02em;
+    &__list {
+      display: flex;
+    }
+    &__element {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    .header__link {
+      outline: none;
+      position: relative;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--blueish);
+      }
+      @media screen and (min-width: 768px) {
+        &:hover::after,
+        &:focus::after {
+          background-color: var(--blueish);
+        }
+        &::after {
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 4px;
+          background-color: transparent;
+          border-radius: 2px;
+          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+  }
+  &__contact {
+    @include font(500, 12px, 1.16);
+    letter-spacing: 0.02em;
+    color: var(--greyish);
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      @include font(500, 14px, 1.14);
+      letter-spacing: 0.02em;
+      color: (var(--greyish));
+    }
+    &__element {
+      @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      .header__link {
+        display: flex;
+      }
+    }
+    &__context {
+      margin-right: 8px;
+      @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+      }
+    }
+    &__icon-1 {
+      display: block;
+      width: 14px;
+      height: 10px;
+      @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
+    }
+    &__icon-2 {
+      display: block;
+      width: 10px;
+      height: 14px;
+      @media screen and (min-width: 1200px) {
+        height: 16px;
+      }
+    }
+  }
+  &__nav,
+  &__contact {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__burger-btn {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    margin-left: auto;
+    outline: none;
+    &:hover,
+    &:focus {
+      fill: var(--blueish);
+    }
+    &__icon {
+      background-color: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .container {
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      height: 80px;
+    }
+  }
+}
+
+// .header .container {
+//   display: flex;
+//   align-items: baseline;
+//   border-bottom: 1px solid #ececec;
+// }
+// .header {
+//   #logo {
+//     margin-right: 90px;
+//   }
+//   &__link {
+//     display: flex;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:focus {
+//       color: var(--blueish);
+//     }
+//     &::after {
+//       position: absolute;
+//       bottom: -1px;
+//       left: 0;
+//       content: '';
+//       width: 100%;
+//       height: 4px;
+//       background-color: transparent;
+//       border-radius: 2px;
+//       opacity: 1;
+//       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//   }
+// }
+// .header__link:hover::after,
+// .header__link:focus::after {
+//   background-color: var(--blueish);
+// }
+// .header__nav {
+//   display: flex;
+//   &__element {
+//     position: relative;
+//     padding: 32px 0;
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+// }
+// .header__contact {
+//   display: flex;
+//   margin-left: auto;
+//   color: var(--greyish);
+//   &__element:not(:last-child) {
+//     margin-right: 50px;
+//   }
+//   &__context {
+//     margin-right: 10px;
+//   }
+//   &__icon {
+//     fill: var(--greyish);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+//   .header__link:hover &__icon,
+//   .header__link:focus &__icon {
+//     fill: var(--blueish);
+//   }
+// }

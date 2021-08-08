@@ -1,0 +1,193 @@
+.backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.backdrop-content {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  padding: 40px;
+}
+.backdrop-close-button-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-close-button-container:hover,
+.backdrop-close-button-container:focus {
+  fill: var(--blueish);
+}
+.backdrop-close-button {
+  width: 11px;
+  height: 11px;
+}
+.backdrop-content p {
+  margin-bottom: 12px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--blackish);
+}
+.backdrop-form {
+  width: 100%;
+}
+.backdrop-user-container {
+  margin-bottom: 20px;
+}
+.backdrop-user-info-container {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.backdrop-user-info-container:hover .backdrop-user-info-input {
+  border-color: var(--blueish);
+}
+.backdrop-user-info-container:hover .backdrop-user-icon {
+  fill: var(--blueish);
+}
+.backdrop-user-info-input:focus {
+  border-color: var(--blueish);
+  outline: none;
+}
+.backdrop-user-info-input:focus + .backdrop-user-icon {
+  fill: var(--blueish);
+}
+.backdrop-user-info {
+  display: block;
+  width: max-content;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--greyish);
+}
+.backdrop-user-info-input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-user-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-user-comment {
+  display: block;
+  width: max-content;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--greyish);
+}
+.backdrop-user-comment-textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-user-comment-textarea:hover,
+.backdrop-user-comment-textarea:focus {
+  border-color: var(--blueish);
+  outline: none;
+}
+.backdrop-checkbox-container {
+  margin: 0 auto 30px;
+  width: max-content;
+}
+.backdrop-checkbox-label {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--greyish);
+}
+.backdrop-checkbox-label::before {
+  content: '';
+  background-image: url('../img/backdrop-checkbox-border.svg');
+  margin-right: 8.4px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-checkbox-label a {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+.backdrop-checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.backdrop-checkbox:hover + .backdrop-checkbox-label::before,
+.backdrop-checkbox:focus + .backdrop-checkbox-label::before {
+  background-image: url('../img/backdrop-checkbox-border-focus.svg');
+}
+.backdrop-checkbox:checked + .backdrop-checkbox-label::before {
+  background-image: url('../img/backdrop-checkbox.svg');
+}
+.backdrop-submit-button {
+  background: #2196f3;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
