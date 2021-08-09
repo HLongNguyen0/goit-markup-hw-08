@@ -1076,8 +1076,10 @@ address {
 }
 
 .portfolio__card__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   outline: none;
-  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1113,6 +1115,7 @@ address {
 }
 
 .portfolio__card__info {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
