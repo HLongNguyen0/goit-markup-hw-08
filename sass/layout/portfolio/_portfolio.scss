@@ -62,6 +62,9 @@
     position: relative;
     overflow: hidden;
   }
+  &__img {
+    max-width: 100%;
+  }
   &__overlay {
     background: rgba(33, 150, 243, 0.9);
     padding: 77px 24px;

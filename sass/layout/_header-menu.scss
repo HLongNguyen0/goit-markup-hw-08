@@ -8,6 +8,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

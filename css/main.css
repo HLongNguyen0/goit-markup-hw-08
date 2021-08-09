@@ -382,6 +382,7 @@ address {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1090,6 +1091,10 @@ address {
 .portfolio__card__img-container {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__card__img {
+  max-width: 100%;
 }
 
 .portfolio__card__overlay {
