@@ -25,7 +25,7 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <a id="logo" href="" lang="en"><span>Web</span>Studio</a>
+        <a class="logo" id="logo" href="" lang="en"><span>Web</span>Studio</a>
         <nav class="header__nav">
           <ul class="header__nav__list nostyle-ul">
             <li class="header__nav__element">
@@ -192,7 +192,7 @@
       <section class="about">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="grid nostyle-ul">
+          <ul class="about__list nostyle-ul">
             <li class="about__elements">
               <picture>
                 <source srcset="./img/box1.webp 1x, ./img/box1@2x.webp 2x" type="image/webp" />
@@ -540,57 +540,49 @@
       </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <address>
-          <a class="logo--footer" id="logo" href="" lang="ea"><span>Web</span>Studio</a>
-          <ul class="footer__address nostyle-ul">
-            <li class="footer__address__element">
-              <a
-                class="footer__address__location"
-                href="https://goo.gl/maps/qdQRPe8Dp2wHUqhv6"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer__address__element">
-              <a class="footer__address__contacts" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer__address__element">
-              <a class="footer__address__contacts" href="tel:+380991111111"> +38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer__address__container">
+          <a class="logo logo--footer" id="logo" href="" lang="ea"><span>Web</span>Studio</a>
+          <address class="footer__address">
+            <a
+              class="footer__address__location"
+              href="https://goo.gl/maps/qdQRPe8Dp2wHUqhv6"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <a class="footer__address__contacts" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__address__contacts" href="tel:+380991111111"> +38 099 111 11 11</a>
+          </address>
+        </div>
         <div class="footer__sm">
-          <p class="footer__sm__description">присоединяйтесь</p>
+          <p class="footer__description">присоединяйтесь</p>
           <div class="social-media">
             <a class="social-media__link social-media__link--footer" href="">
               <svg class="social-media__icon social-media__icon--footer">
-                <use href="./img/spite.svg#icon-instagram"></use>
+                <use href="./img/sprite.svg#instagram"></use>
               </svg>
             </a>
             <a class="social-media__link social-media__link--footer" href="">
               <svg class="social-media__icon social-media__icon--footer">
-                <use href="./img/spite.svg#icon-twitter"></use>
+                <use href="./img/sprite.svg#twitter"></use>
               </svg>
             </a>
             <a class="social-media__link social-media__link--footer" href="">
               <svg class="social-media__icon social-media__icon--footer">
-                <use href="./img/spite.svg#icon-facebook"></use>
+                <use href="./img/sprite.svg#facebook"></use>
               </svg>
             </a>
             <a class="social-media__link social-media__link--footer" href="">
               <svg class="social-media__icon social-media__icon--footer">
-                <use href="./img/spite.svg#icon-linkedin"></use>
+                <use href="./img/sprite.svg#linkedin"></use>
               </svg>
             </a>
           </div>
         </div>
         <div class="footer__email">
-          <p class="footer__email__description">Подпишитесь на рассылку</p>
+          <p class="footer__description">Подпишитесь на рассылку</p>
           <form class="footer__email__form">
             <input
               class="footer__email__input"
@@ -601,94 +593,94 @@
             <button class="footer__email__button" type="submit">
               <p>Подписаться</p>
               <svg class="footer__email__icon">
-                <use href="./img/spite.svg#icon-icon-send"></use>
+                <use href="./img/sprite.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Backdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop-content">
-        <button class="backdrop-close-button-container" data-modal-close>
-          <svg class="backdrop-close-button">
-            <use href="./img/spite.svg#icon-Vector"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__content">
+        <button class="backdrop__close-btn" data-modal-close>
+          <svg class="backdrop__close-btn__icon">
+            <use href="./img/sprite.svg#hamburger-close"></use>
           </svg>
         </button>
-        <p>Оставьте свои данные, мы вам перезвоним</p>
-        <form class="backdrop-form">
-          <div class="backdrop-user-container">
-            <label for="user-names" class="backdrop-user-info">
+        <p class="backdrop__description">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="backdrop__form">
+          <div class="backdrop__form__user">
+            <label for="user-names" class="backdrop__label">
               <span>Имя</span>
             </label>
-            <div class="backdrop-user-info-container">
+            <div class="backdrop__user-info__container">
               <input
                 type="text"
-                class="backdrop-user-info-input"
+                class="backdrop__input"
                 id="user-names"
                 name="user-names"
                 required
               />
-              <svg class="backdrop-user-icon">
-                <use href="./img/spite.svg#icon-user-backdrop"></use>
+              <svg class="backdrop__user-info__icon">
+                <use href="./img/sprite.svg#username"></use>
               </svg>
             </div>
-            <label for="user-phone" class="backdrop-user-info">
+            <label for="user-phone" class="backdrop__label">
               <span>Телефон</span>
             </label>
-            <div class="backdrop-user-info-container">
+            <div class="backdrop__user-info__container">
               <input
                 type="phone"
-                class="backdrop-user-info-input"
+                class="backdrop__input"
                 id="user-phone"
                 name="user-tel"
                 required
               />
-              <svg class="backdrop-user-icon">
-                <use href="./img/spite.svg#icon-phone-backdrop"></use>
+              <svg class="backdrop__user-info__icon">
+                <use href="./img/sprite.svg#call"></use>
               </svg>
             </div>
-            <label for="user-email" class="backdrop-user-info">
+            <label for="user-email" class="backdrop__label">
               <span>Почта</span>
             </label>
-            <div class="backdrop-user-info-container">
+            <div class="backdrop__user-info__container">
               <input
                 type="email"
-                class="backdrop-user-info-input"
+                class="backdrop__input"
                 id="user-email"
                 name="user-email"
                 required
               />
-              <svg class="backdrop-user-icon">
-                <use href="./img/spite.svg#icon-email-backdrop"></use>
+              <svg class="backdrop__user-info__icon">
+                <use href="./img/sprite.svg#black-list"></use>
               </svg>
             </div>
-            <label for="user-comment" class="backdrop-user-comment"> Комментарий </label>
+            <label for="user-comment" class="backdrop__label"> Комментарий </label>
             <textarea
-              class="backdrop-user-comment-textarea"
+              class="backdrop__input backdrop__input--textarea"
               id="user-comment"
               name="user-comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="backdrop-checkbox-container">
+          <div class="backdrop__checkbox__container">
             <input
               type="checkbox"
-              class="backdrop-checkbox"
+              class="backdrop__checkbox__input is-hidden"
               name="backdrop-checkbox"
               id="backdrop-checkbox"
               required
             />
-            <label for="backdrop-checkbox" class="backdrop-checkbox-label"
+            <label for="backdrop-checkbox" class="backdrop__label backdrop__label--checkbox"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
+              <a class="backdrop__label__link" href="">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="backdrop-submit-button">Отправить</button>
+          <button type="submit" class="backdrop__submit-button">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- js link -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>

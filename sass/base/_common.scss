@@ -4,9 +4,10 @@ body {
   letter-spacing: 0.03em;
 }
 a {
+  display: block;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
 }
 button {
   padding: 0;
@@ -35,4 +36,7 @@ input {
 }
 img {
   display: block;
+}
+address {
+  font-style: normal;
 }
