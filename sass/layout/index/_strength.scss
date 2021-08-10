@@ -32,7 +32,7 @@
       margin-bottom: 10px;
       @include font(700, 14px, 1.14);
       text-transform: uppercase;
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 767px) {
         text-align: center;
       }
     }
