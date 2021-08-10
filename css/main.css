@@ -154,7 +154,8 @@ address {
 }
 
 @media screen and (max-width: 1199px) {
-  .social-media__link--footer:hover, .social-media__link--footer:focus {
+  .social-media__link--footer:hover,
+  .social-media__link--footer:focus {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
@@ -230,12 +231,14 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav .header__link:hover, .header__nav .header__link:focus {
+.header__nav .header__link:hover,
+.header__nav .header__link:focus {
   color: var(--blueish);
 }
 
 @media screen and (min-width: 768px) {
-  .header__nav .header__link:hover::after, .header__nav .header__link:focus::after {
+  .header__nav .header__link:hover::after,
+  .header__nav .header__link:focus::after {
     background-color: var(--blueish);
   }
   .header__nav .header__link::after {
@@ -288,7 +291,8 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .header__contact__element .header__link:hover, .header__contact__element .header__link:focus {
+  .header__contact__element .header__link:hover,
+  .header__contact__element .header__link:focus {
     outline: none;
     color: var(--blueish);
     fill: var(--blueish);
@@ -331,7 +335,8 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .header__nav, .header__contact {
+  .header__nav,
+  .header__contact {
     display: none;
   }
 }
@@ -347,7 +352,8 @@ address {
   }
 }
 
-.header__burger-btn:hover, .header__burger-btn:focus {
+.header__burger-btn:hover,
+.header__burger-btn:focus {
   fill: var(--blueish);
 }
 
@@ -410,7 +416,8 @@ address {
   outline: none;
 }
 
-.header__menu .header__nav .header__link:hover, .header__menu .header__nav .header__link:focus {
+.header__menu .header__nav .header__link:hover,
+.header__menu .header__nav .header__link:focus {
   color: var(--blueish);
 }
 
@@ -466,6 +473,10 @@ address {
   height: 22px;
 }
 
+.header__menu .header__link {
+  width: fit-content;
+}
+
 .header__close-btn {
   background-color: #ffffff;
   position: absolute;
@@ -484,6 +495,10 @@ address {
   width: 40px;
   height: 40px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .container {
+  padding: 118px 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -506,7 +521,8 @@ address {
 
 .hero {
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/bg-main.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../img/mobile/bg-main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,33 +532,42 @@ address {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/mobile/bg-main@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/tablet/bg-main.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/tablet/bg-main.jpg');
     max-width: 768px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/tablet/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/tablet/bg-main@2x.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/desktop/bg-main.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/desktop/bg-main.jpg');
     max-width: 1600px;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/desktop/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/desktop/bg-main@2x.jpg');
   }
 }
 
@@ -699,7 +724,8 @@ address {
 
 .team__member {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -809,7 +835,8 @@ address {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   outline: none;
   border: 1px solid var(--blueish);
   border-radius: 4px;
@@ -863,7 +890,8 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__close-btn:hover, .backdrop__close-btn:focus {
+.backdrop__close-btn:hover,
+.backdrop__close-btn:focus {
   fill: var(--blueish);
 }
 
@@ -917,7 +945,7 @@ address {
 
 .backdrop__label--checkbox::before {
   content: '';
-  background-image: url("../img/check-border.svg");
+  background-image: url('../img/check-border.svg');
   width: 16px;
   height: 15px;
   display: inline-block;
@@ -930,7 +958,7 @@ address {
 
 .backdrop__checkbox__input:hover + .backdrop__label--checkbox::before,
 .backdrop__checkbox__input:focus + .backdrop__label--checkbox::before {
-  background-image: url("../img/check-border-focus.svg");
+  background-image: url('../img/check-border-focus.svg');
 }
 
 .backdrop__label__link {
@@ -949,7 +977,8 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__input:hover, .backdrop__input:focus {
+.backdrop__input:hover,
+.backdrop__input:focus {
   border-color: var(--blueish);
 }
 
@@ -997,7 +1026,7 @@ address {
 }
 
 .backdrop__checkbox__input:checked + .backdrop__label--checkbox::before {
-  background-image: url("../img/check.svg");
+  background-image: url('../img/check.svg');
 }
 
 .backdrop__submit-button {
@@ -1045,10 +1074,12 @@ address {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: inherit;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__navigation .navigation__element .list__button:hover, .portfolio__navigation .navigation__element .list__button:focus {
+.portfolio__navigation .navigation__element .list__button:hover,
+.portfolio__navigation .navigation__element .list__button:focus {
   cursor: pointer;
   color: #ffffff;
   background-color: var(--blueish);
@@ -1084,8 +1115,10 @@ address {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__card__link:hover, .portfolio__card__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio__card__link:hover,
+.portfolio__card__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__card__img-container {
