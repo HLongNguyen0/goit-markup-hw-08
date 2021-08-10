@@ -811,7 +811,6 @@
         </div>
       </section>
     </main>
-
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -873,87 +872,6 @@
         </div>
       </div>
     </footer>
-    <!-- Backdrop -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop__content">
-        <button class="backdrop__close-btn" data-modal-close>
-          <svg class="backdrop__close-btn__icon">
-            <use href="./img/sprite.svg#hamburger-close"></use>
-          </svg>
-        </button>
-        <p class="backdrop__description">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="backdrop__form">
-          <div class="backdrop__form__user">
-            <label for="user-names" class="backdrop__label">
-              <span>Имя</span>
-            </label>
-            <div class="backdrop__user-info__container">
-              <input
-                type="text"
-                class="backdrop__input"
-                id="user-names"
-                name="user-names"
-                required
-              />
-              <svg class="backdrop__user-info__icon">
-                <use href="./img/sprite.svg#username"></use>
-              </svg>
-            </div>
-            <label for="user-phone" class="backdrop__label">
-              <span>Телефон</span>
-            </label>
-            <div class="backdrop__user-info__container">
-              <input
-                type="phone"
-                class="backdrop__input"
-                id="user-phone"
-                name="user-tel"
-                required
-              />
-              <svg class="backdrop__user-info__icon">
-                <use href="./img/sprite.svg#call"></use>
-              </svg>
-            </div>
-            <label for="user-email" class="backdrop__label">
-              <span>Почта</span>
-            </label>
-            <div class="backdrop__user-info__container">
-              <input
-                type="email"
-                class="backdrop__input"
-                id="user-email"
-                name="user-email"
-                required
-              />
-              <svg class="backdrop__user-info__icon">
-                <use href="./img/sprite.svg#black-list"></use>
-              </svg>
-            </div>
-            <label for="user-comment" class="backdrop__label"> Комментарий </label>
-            <textarea
-              class="backdrop__input backdrop__input--textarea"
-              id="user-comment"
-              name="user-comment"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
-          <div class="backdrop__checkbox__container">
-            <input
-              type="checkbox"
-              class="backdrop__checkbox__input is-hidden"
-              name="backdrop-checkbox"
-              id="backdrop-checkbox"
-              required
-            />
-            <label for="backdrop-checkbox" class="backdrop__label backdrop__label--checkbox"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="backdrop__label__link" href="">Условия договора</a>
-            </label>
-          </div>
-          <button type="submit" class="backdrop__submit-button">Отправить</button>
-        </form>
-      </div>
-    </div>
     <!-- js link -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
